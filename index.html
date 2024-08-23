@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Réservation de Billets d'Avion</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Avion</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#reserve">Réserve</a></li>
+            <li><a href="#see">See</a></li>
+            <li><a href="#change">Change</a></li>
+            <li><a href="#cancel">Cancel</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Nom" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Mot de passe" name="password" required>
+            <button type="submit">Se Connecter</button>
+        </form>
+    </section>
+
+    <section id="reserve" style="display:none;">
+        <h2>Réserver un Billet</h2>
+        <form id="reserveForm">
+            <input type="text" placeholder="Prénom" name="firstName" required>
+            <input type="text" placeholder="Nom" name="lastName" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="text" placeholder="Lieu de destination" name="destination" required>
+            <input type="datetime-local" name="datetime" required>
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+
+    <section id="see" style="display:none;">
+        <h2>Voir les Réservations</h2>
+        <div id="reservationList">
+            <!-- Liste des réservations sera affichée ici -->
+        </div>
+    </section>
+
+    <section id="change" style="display:none;">
+        <h2>Changer une Réservation</h2>
+        <form id="changeForm">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Mot de passe" name="password" required>
+            <input type="text" placeholder="Nouveau lieu" name="newDestination" required>
+            <input type="datetime-local" name="newDatetime" required>
+            <button type="submit">Changer</button>
+        </form>
+    </section>
+
+    <section id="cancel" style="display:none;">
+        <h2>Annuler une Réservation</h2>
+        <form id="cancelForm">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Mot de passe" name="password" required>
+            <button type="submit">Annuler</button>
+        </form>
+    </section>
+
+    <section id="contact" style="display:none;">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Nom" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <textarea placeholder="Message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Avion. Contact: <a href="mailto:v70404140@gmail.com">v70404140@gmail.com</a></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
